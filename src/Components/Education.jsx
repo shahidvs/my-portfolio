@@ -5,7 +5,9 @@ import { motion } from 'framer-motion'
 const Education = ({lightmode}) => {
   return (
     <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
-        <motion.h2 whileInView={{opacity:1,x:0}} initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.8, delay:0.5}} className={lightmode?'text-center my-20 text-white text-4xl':'text-center my-20 text-black text-4xl'}>Education</motion.h2>
+        <section id="education">
+        <motion.h2 whileInView={{opacity:1,x:0}} initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.8, delay:0.5}} className={lightmode?'text-center my-20 text-white text-4xl':'text-center my-20 text-black text-4xl'}>Education & Certifications</motion.h2>
+        </section>
         <div className='w-full  '>
             <div>
                 <motion.div className={lightmode?"text-white":""} whileInView={{opacity:1,x:0}} initial={{opacity:0,x:-100}} transition={{duration:0.8}}>

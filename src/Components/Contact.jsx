@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 import { IoMdHome } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 
-const Contact = ({lightmode}) => {
+const Contact = ({ lightmode }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -70,12 +70,20 @@ const Contact = ({lightmode}) => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 1, y: 100 }}
           transition={{ duration: 1.2 }}
-          className={lightmode?"mt-20 mb-10 text-center text-4xl text-white":"mt-20 mb-10 text-center text-4xl text-black"}
+          className={
+            lightmode
+              ? "mt-20 mb-10 text-center text-4xl text-white"
+              : "mt-20 mb-10 text-center text-4xl text-black"
+          }
         >
           Get in touch
         </motion.h2>
       </section>
-      <div className={lightmode?"text-center text-white":"text-center text-black"}>
+      <div
+        className={
+          lightmode ? "text-center text-white" : "text-center text-black"
+        }
+      >
         <motion.p
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 1, y: 100 }}
@@ -83,7 +91,7 @@ const Contact = ({lightmode}) => {
           className="my-4"
         >
           <div className="flex justify-center text-center gap-5 ">
-         <IoMdHome className="text-3xl " /> {CONTACT.address}
+            <IoMdHome className="text-3xl " /> {CONTACT.address}
           </div>
         </motion.p>
         <motion.p
@@ -92,10 +100,27 @@ const Contact = ({lightmode}) => {
           transition={{ duration: 1.4 }}
           className="my-4"
         >
-          <div className="flex justify-center text-center gap-5">
-          <FaPhoneAlt className="text-2xl"/>
-          {CONTACT.phoneNo}
+          <div className="flex justify-center  ">
+            <FaPhoneAlt className="text-xl mr-6" />
+            <p className="mr-6">{CONTACT.phoneNo}</p>
           </div>
+        </motion.p>
+        <motion.p
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 1, y: 100 }}
+          transition={{ duration: 1.45 }}
+          className="my-4"
+        >
+          <a
+            href={`mailto:${CONTACT.email}`}
+            className={
+              lightmode
+                ? "underline text-purple-300 hover:text-purple-200"
+                : "underline text-purple-800 hover:text-purple-900"
+            }
+          >
+            {CONTACT.email}
+          </a>
         </motion.p>
         <form
           onSubmit={handleSubmit}
@@ -111,9 +136,21 @@ const Contact = ({lightmode}) => {
             id="name"
             value={formData.name}
             onChange={handleChange}
-            className={lightmode?"p-3 rounded-md bg-neutral-800 focus:outline-indigo-700 caret-purple-500":"p-3 rounded-md bg-neutral-200 focus:outline-indigo-700 caret-purple-500"}
+            className={
+              lightmode
+                ? "p-3 rounded-md bg-neutral-800 focus:outline-indigo-700 caret-purple-500"
+                : "p-3 rounded-md bg-neutral-200 focus:outline-indigo-700 caret-purple-500"
+            }
           />
-          {error.name && <p className={lightmode?"text-sm text-red-600":"text-sm text-red-900"}>{error.name}</p>}
+          {error.name && (
+            <p
+              className={
+                lightmode ? "text-sm text-red-600" : "text-sm text-red-900"
+              }
+            >
+              {error.name}
+            </p>
+          )}
           <motion.input
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 1, y: 100 }}
@@ -124,8 +161,21 @@ const Contact = ({lightmode}) => {
             id="email"
             value={formData.email}
             onChange={handleChange}
-            className={lightmode?"p-3 rounded-md bg-neutral-800 focus:outline-indigo-700 caret-purple-500":"p-3 rounded-md bg-neutral-200 focus:outline-indigo-700 caret-purple-500"}          />
-          {error.email && <p className={lightmode?"text-sm text-red-600":"text-sm text-red-900"}>{error.email}</p>}
+            className={
+              lightmode
+                ? "p-3 rounded-md bg-neutral-800 focus:outline-indigo-700 caret-purple-500"
+                : "p-3 rounded-md bg-neutral-200 focus:outline-indigo-700 caret-purple-500"
+            }
+          />
+          {error.email && (
+            <p
+              className={
+                lightmode ? "text-sm text-red-600" : "text-sm text-red-900"
+              }
+            >
+              {error.email}
+            </p>
+          )}
           <motion.textarea
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 1, y: 100 }}
@@ -136,18 +186,35 @@ const Contact = ({lightmode}) => {
             id="message"
             value={formData.message}
             onChange={handleChange}
-            className={lightmode?"p-3 rounded-md bg-neutral-800 focus:outline-indigo-700 caret-purple-500":"p-3 rounded-md bg-neutral-200 focus:outline-indigo-700 caret-purple-500"}          ></motion.textarea>
+            className={
+              lightmode
+                ? "p-3 rounded-md bg-neutral-800 focus:outline-indigo-700 caret-purple-500"
+                : "p-3 rounded-md bg-neutral-200 focus:outline-indigo-700 caret-purple-500"
+            }
+          ></motion.textarea>
           {error.message && (
-            <p className={lightmode?"text-sm text-red-600":"text-sm text-red-900"}>{error.message}</p>
+            <p
+              className={
+                lightmode ? "text-sm text-red-600" : "text-sm text-red-900"
+              }
+            >
+              {error.message}
+            </p>
           )}
           <motion.button
-            whileInView={{opacity:1,y:0}} initial={{opacity:1,y:100}} transition={{duration:1.2}}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 1, y: 100 }}
+            transition={{ duration: 1.2 }}
             disabled={isSending}
-            className={lightmode?`mb-5 w-full rounded border border-stone-50/30 px-4 py-2 text-sm fornt-semibold text-white hover:bg-purple-800 ${
-              isSending ? "cursor-not-allowed opacity-50" : ""
-            }`:`mb-5 w-full rounded border border-stone-900 px-4 py-2 text-sm font-semibold text-black hover:bg-purple-400 ${
-              isSending ? "cursor-not-allowed opacity-50" : ""
-            }`}
+            className={
+              lightmode
+                ? `mb-5 w-full rounded border border-stone-50/30 px-4 py-2 text-sm fornt-semibold text-white hover:bg-purple-800 ${
+                    isSending ? "cursor-not-allowed opacity-50" : ""
+                  }`
+                : `mb-5 w-full rounded border border-stone-900 px-4 py-2 text-sm font-semibold text-black hover:bg-purple-400 ${
+                    isSending ? "cursor-not-allowed opacity-50" : ""
+                  }`
+            }
           >
             {isSending ? "sending..." : "Send"}
           </motion.button>

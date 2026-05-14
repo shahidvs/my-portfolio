@@ -1,167 +1,159 @@
 import Tailwind from "../assets/tailwind.svg";
 import Reactjs from "../assets/react.svg";
-import MongoDB from "../assets/mongodb.svg";
 import Bootstrap from "../assets/bootstrap.svg";
 import CSS from "../assets/css.svg";
-import Express from "../assets/express.svg";
 import Git from "../assets/git-icon.svg";
 import Github from "../assets/github-icon.svg";
 import HTML from "../assets/html.svg";
-import chakra_ui from "../assets/chakra-ui.svg";
 import Js from "../assets/js.svg";
 import Node from "../assets/node.svg";
 import Postman from "../assets/postman.svg";
-import Redux from "../assets/redux.svg";
-import Postgresql from "../assets/postgresql.svg";
-import netflix from "../assets/netflix.png";
-import jobPortal from "../assets/job-portal.png";
-import portfolio from "../assets/portfolio.png";
-import chatterBox from "../assets/chat.png";
-import weather from "../assets/weather.png";
-import python from "../assets/python.svg"
-import docker from "../assets/docker.svg"
-import figma from "../assets/figma.svg"
-import graphql from "../assets/graphql.svg"
-import nginx from "../assets/nginx.svg"
+import TypeScript from "../assets/typescript.svg";
+import Nextjs from "../assets/nextjs.svg";
+import Astro from "../assets/astro.svg";
+import Docker from "../assets/docker.svg";
+import Figma from "../assets/figma.svg";
+import Wraft from "../assets/wraft.png";
+import portfolio from "../assets/FilmBlog.png";
+import Doctor from "../assets/Doctor.png";
+import Food from "../assets/Food.png";
 
-export const HOME_SUMMARY = `MERN Stack Developer with 1+ year of professional experience in building scalable web applications using MongoDB, Express.js, React.js, and Node.js. Strong expertise in backend development, RESTful and GraphQL APIs, JWT-based authentication, and database-driven systems. Experienced in developing enterprise tools, employee management systems, and AI-powered applications including Retrieval-Augmented Generation (RAG). Proficient in Docker-based deployments, Nginx configuration, and modern development workflows.`;
+export const HOME_SUMMARY = `Frontend Developer with 2+ years of experience building production-grade web applications using React.js, Next.js, and TypeScript. Contributed to Wraft — an open-source document lifecycle management platform — with a Turbo Repo monorepo, a ProseMirror-based editor, and a reusable UI system. Experienced in REST API integration, accessible responsive interfaces, and collaboration across teams. Open to Frontend Developer roles in India and GCC countries.`;
 
-export const ABOUT_TEXT = `I am a dedicated full stack developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies, including React, Node.js, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I have strong expertise in backend development, RESTful and GraphQL APIs, and AI-powered applications including Retrieval-Augmented Generation (RAG). I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions.`;
+export const ABOUT_TEXT = `I am a Frontend Developer focused on React, Next.js, and TypeScript. At Functionary Labs I worked on Wraft, an open-source document lifecycle platform, where I helped shape the monorepo architecture, built a ProseMirror-based rich text editor, and contributed to a shared UI library with Storybook. I care about performance, accessibility, and clear design systems. Recently I have been delivering static, SEO-friendly sites with Astro, Tailwind, and Pages CMS connected to GitHub for editor-friendly publishing workflows.`;
 
 export const EXPERIENCES = [
   {
-    year: "April 2025 - Present",
-    role: "MERN Stack Developer",
+    year: "Jan 2026 – Present",
+    role: "Frontend Developer (Freelance)",
+    type: "Self-Employed · Remote",
+    company: "Self-Employed",
+    description: `Designed and developed a film industry blog using Astro.js, Tailwind CSS, and Pages CMS.
+Integrated Pages CMS with GitHub so editors publish visually with changes reflected on the live site via GitHub-connected deployment.
+Built static, performance-optimized Astro pages for fast load times and strong SEO.
+Delivered the project end to end — from architecture to production deployment.`,
+    technologies: ["Astro.js", "Tailwind CSS", "Pages CMS", "GitHub"],
+  },
+  {
+    year: "May 2024 – Dec 2025",
+    role: "Frontend Developer",
     type: "Full Time",
-    company: "RIOD LOGIC Pvt. Ltd",
-    description: `Developing and maintaining full-stack applications using the MERN stack for internal and client-based projects.
-Built employee management and time tracking software with role-based access, project-wise work logging, and reporting features.
-Designed and implemented RESTful and GraphQL APIs using Node.js and Express.js.
-Worked on AI-driven applications including Retrieval-Augmented Generation (RAG), integrating LLMs with vector databases.
-Assisted in deployment and environment setup using Docker and Nginx.`,
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "GraphQL", "Docker", "Nginx"],
+    company: "Functionary Labs Pvt. Ltd · Calicut, Kerala",
+    description: `Developed and maintained production client applications with Next.js and TypeScript for Wraft — an open-source document lifecycle management platform.
+Built scalable frontend architecture in a Turbo Repo monorepo (web, doc, editor, ui packages).
+Created a reusable UI library with TypeScript, styled-components, and xstyled/emotion.
+Implemented a ProseMirror-based rich text editor for document creation, editing, and formatting.
+Authored Storybook documentation for components, icons, and the design system.
+Integrated REST APIs (GET, POST, PUT, DELETE) with backend engineers; performed UI testing and QA for cross-browser and responsive behavior.
+Shipped responsive interfaces with Tailwind CSS across screen sizes.`,
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Turbo Repo",
+      "ProseMirror",
+      "styled-components",
+      "Tailwind CSS",
+      "Storybook",
+      "REST APIs",
+    ],
   },
   {
-    year: "July 2024 - Jan 2025",
-    role: "Backend Developer Intern",
-    type: "Internship",
-    company: "DiGi Suvidha Pvt. Ltd",
-    description: `Developed and maintained server-side logic, ensuring high performance and reliability.
-Integrated RESTful APIs to manage and retrieve application data efficiently.
-Utilized PostgreSQL for database management, optimizing queries and ensuring data integrity.`,
-    technologies: ["Node.js", "PostgreSQL", "RESTful APIs"],
-  },
-  {
-    year: "June 2023 - Jan 2024",
+    year: "June 2023 – Jan 2024",
     role: "MERN Full Stack Developer Intern",
     type: "Internship",
-    company: "Luminar Technolab",
-    description: `Designed and developed web applications using React.js, improving frontend performance and user experience.
-Built secure and scalable backend services using Node.js and Express.js.
-Managed data storage and retrieval using MongoDB for scalable application architecture.`,
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux"],
+    company: "Luminar Technolab · Kochi, Kerala",
+    description: `Built web applications with React.js to improve performance and user experience.
+Developed backend REST APIs with Node.js and Express.js.
+Used MongoDB for data storage and retrieval with scalable patterns.`,
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
   },
 ];
 
 export const education = [
   {
-    title: "BCA",
-    description:
-      "Graduated from Assabah Arts and Science College, Valayamkulam Malappuram under Calicut University in November 2023",
+    title: "Bachelor of Computer Applications (BCA)",
+    description: "Calicut University, Kerala · 2020 – 2024",
   },
   {
-    title: "Plus Two",
-    description:
-      "Graduated from MIHSS, Ponnani Malappuram  in March 2020",
+    title: "Higher Secondary Education (+2)",
+    description: "DHSE Kerala · 2018 – 2020",
   },
   {
-    title: "SSLC",
-    description: "Graduated from AVHSS, Ponnani Malappuram in March 2018",
+    title: "MERN Full Stack Developer Internship",
+    description: "Luminar Technolab · 2024",
+  },
+  {
+    title: "NACTET Certificate",
+    description: "Professional certification",
   },
 ];
-
 
 export const PROJECTS = [
-  
   {
-    title: "ChatterBox",
-    image: chatterBox,
+    title: "Wraft — Document Lifecycle Management",
+    image: Wraft,
     description:
-      "Real-time chat application is a dynamic platform built using the MERN stack, featuring real-time messaging, MongoDB for data storage, and WebSocket integration to facilitate seamless communication between users.",
-    technologies: ["React", "Node.js", "Express.js", "Chakra Ui", "MongoDB","Socket.io"],
-     live:"https://chatterbox-c0j8.onrender.com",
-    code:"https://github.com/safeer239/chatterBox"
-  },
-  {
-    title: "Netflix-Clone",
-    image: netflix,
-    description:
-      "A Netflix clone project that allows users to watch trailers of movies and TV shows. The application features a search functionality for finding movies and TV shows. It provides an intuitive and engaging user experience similar to the original Netflix platform.",
-    technologies: ["React", "Node.js", "Express.js", "Tailwind CSS", "MongoDB"],
-     live:"https://netflix-clone-p1vf.onrender.com",
-    code:"https://github.com/safeer239/netflix-clone"
-  },
-  {
-    title: "Job Portal Website",
-    image: jobPortal,
-    description:
-      "An website Job Portal enables the registered users to post, edit, and manage their job listing.Implemented firebase Authentication for the user authentication and authorization.",
+      "Open-source content authoring platform for structured documents, workflows, and collaboration — built on Markdown and JSON. Contributed to the Next.js and TypeScript frontend in a Turbo Repo monorepo, UI library with styled-components, Storybook docs, and the ProseMirror-based editor package.",
     technologies: [
-      "React",
-      "Node.js",
-      "Express.js",
-      "Tailwind CSS",
-      "MongoDB",
-      "Firebase",
+      "Next.js",
+      "TypeScript",
+      "Turbo Repo",
+      "ProseMirror",
+      "Storybook",
+      "styled-components",
     ],
-    live:"https://github.com/safeer239",
-    code:"https://github.com/safeer239/job-portal-full"
+    live: "https://wraft.app",
+    code: "https://github.com/wraft/wraft",
   },
   {
-    title: "Portfolio Website",
+    title: "Film Industry Blog — Astro + Pages CMS",
     image: portfolio,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: [ "React", "Tailwind CSS"],
-     live:"https://personal-portfolio-k7h2.onrender.com",
-    code:"https://github.com/safeer239/Personal_portfolio"
+      "Performance-focused static blog with Astro.js and Tailwind CSS. Pages CMS is wired to GitHub so content editors update posts visually and the site redeploys automatically without developer handoffs.",
+    technologies: ["Astro.js", "Tailwind CSS", "Pages CMS", "GitHub"],
+    live: "https://avmunniarchives.com",
+    code: null,
   },
   {
-    title: "Weather App",
-    image: weather,
+    title: "Doctor Appointment Booking Website",
+    image: Doctor,
     description:
-      "A simple weather application that provides real time information about weather",
-    technologies: ["HTML", "React", "Bootstrap"],
-     live:"https://open-weather2.netlify.app/",
-    code:"https://github.com/safeer239"
+      "Multilingual healthcare platform with dynamic language switching (Hindi and regional languages). React.js and Tailwind CSS with appointment scheduling and availability updates.",
+    technologies: ["React.js", "Tailwind CSS", "i18n"],
+    live: "https://spontaneous-fairy-3d5e13.netlify.app",
+    code: "https://github.com/shahidvs/doctor-x",
+  },
+  {
+    title: "Food Delivery App",
+    image: Food,
+    description:
+      "Restaurant ordering experience with food and price filters, dynamic search, and a responsive layout optimized for mobile and desktop.",
+    technologies: ["React.js", "Tailwind CSS"],
+    live: "https://food-x-beta.vercel.app",
+    code: "https://github.com/shahidvs/food",
   },
 ];
 
-export const skill=[
+export const skill = [
   Reactjs,
-  Node,
-  Express,
-  MongoDB,
-  Tailwind,
-  CSS,
-  HTML,
+  Nextjs,
+  TypeScript,
   Js,
-  python,
-  Redux,
+  Astro,
+  HTML,
+  CSS,
+  Tailwind,
+  Figma,
+  Docker,
+  Node,
   Bootstrap,
-  chakra_ui,
   Git,
   Github,
   Postman,
-  Postgresql,
-  docker,
-  figma,
-  graphql,
-  nginx,
-]
+];
 
 export const CONTACT = {
-  address: "Malappuram, Kerala, India",
-  phoneNo: "+91 8593852681 ",
-  email: "mohammedsafeershefi@gmail.com",
+  address: "Thrissur, Kerala, India",
+  phoneNo: "+91 9645802795",
+  email: "mrshahid234@gmail.com",
 };
