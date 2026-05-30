@@ -2,7 +2,7 @@ import React from "react";
 import { HOME_SUMMARY } from "../Constants/datas";
 import me from "../assets/me1.jpg";
 import Typewriter from "typewriter-effect";
-import resume from "../assets/Muhammed_Shahid.docx";
+import resume from "../assets/Muhammed_Shahid_Resume.pdf";
 import { motion } from "framer-motion";
 
 const Home = ({ lightmode }) => {
